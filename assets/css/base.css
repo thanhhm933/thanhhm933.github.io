@@ -1,0 +1,218 @@
+:root {
+    /* color */
+    --white-color: #fff;
+    --black-color: #000;
+    --primary-color: #282828;
+    --text-color: #000000;
+    --button-color: #f48380;
+
+    /* size */
+    --navbar-height: 40px;
+    --banner-height: 85px;
+    --menu-height: 48px;
+    --header-height: calc(var(--navbar-height) + var(--banner-height) + var(--menu-height));
+    --font-size-main-menu: 1.3rem;
+    --font-size-title-first-home: 2rem;
+    --font-size-title-second-home: 3.2rem;
+    --font-size-desc-home: 1.8rem;
+
+}
+
+
+/* Áp dụng toàn bộ css này lên thẻ html được nhúng file base.css */
+
+* {
+    box-sizing: inherit;
+    /* kế thừa những thuộc tính từ thành phần cha thành phần bao ngoài chính nó */
+}
+
+
+/* CSS cho thẻ html */
+
+html {
+    font-size: 62.5%;
+    /*Tương đương với 10px và cũng bằng 1rem */
+    line-height: 1.6rem;
+    font-family: 'Quicksand', sans-serif;
+    /* sans-serif là loại chữ không có chân */
+    box-sizing: border-box;
+    /* text-align-last: center; */
+}
+
+/* format info product start */
+.title-first {
+    font-size: var(--font-size-title-first-home);
+    display: block;
+    margin: 0 0 10px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.title-second {
+    margin: 0;
+    font-size: var(--font-size-title-second-home);
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.text-desc {
+    font-size: var(--font-size-desc-home);
+        line-height: 1.5;
+        font-weight: 300;
+        margin: 0;
+        padding-top: 15px;
+        letter-spacing: 0.2px;
+    }
+/* format info product end */
+
+/* start slide button */
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 16px 45px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.3rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    vertical-align: middle; /*căn giữa theo thành phần bao ngoài*/
+    text-transform: uppercase;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease-out;
+    z-index: 1;
+    background-color: #f48380;
+    color: #fff;
+    border: 1px solid #f48380;
+    overflow: hidden;
+}
+
+.btnNextBack {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    height: 50px;
+    width: 30px;
+    margin-top: -20px;
+    color: #fff;
+    font-size: 58px;
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+.slide-btn::before
+{
+    z-index: -1;
+    content: "";
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    margin: 0 auto; /*hiệu hứng trượt*/
+    position: absolute;
+    background-color: #fff;
+    transition: all 0.3s ease-out;
+}
+
+.slide-btn:hover
+{
+    color: #212529;
+    background-color: #fff;
+    border-color: transparent;
+    outline: 0;
+    transition: all 0.3s ease-out;
+    outline: none;
+    border: 1px solid #f48380;
+    
+}
+
+.slide-btn:hover::before
+{
+    width: 100%;
+}
+
+/* end slide button */
+
+.product-name {
+    font-size: 1.5rem;
+    margin: 0 0 8px;
+    font-weight: initial;
+    color: #282828;
+    line-height: 1.2;
+    text-transform: uppercase;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.product-name:hover {
+    color: #f48380;
+}
+
+.product-link {
+    text-decoration: none;
+    outline: none;
+    color: #282828;
+    font-size: 14px;
+}
+
+.product-price__value-sale {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #f94c43;
+}
+
+.product-price__value-old {
+    font-size: 12px;
+    font-weight: 300;
+    margin-left: 7px;
+    color: #878c8f;
+    text-decoration: line-through;
+}
+
+/* Discount */
+.product__discount {
+    position: absolute;
+    background-color: red;
+    text-align: center;
+}
+
+.product__discount-percent {
+    color: #fff;
+    text-align: center;
+}
+
+.space-35 {
+    height: 35px;
+    width: 100%; 
+}
+.space-40 {
+    height: 40px;
+    width: 100%;
+}
+
+.space-50 {
+    height: 50px;
+    width: 100%;
+}
+
+.space-55 {
+    height: 55px;
+    width: 100%;
+}
+
+.space-65 {
+    height: 65px;
+    width: 100%;
+}
+
+
+
+
+
+
