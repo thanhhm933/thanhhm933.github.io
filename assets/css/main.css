@@ -237,8 +237,8 @@
     z-index: 1;
     display: flex;
     display: none;
-    /* animation: slide 5s ease-in-out ;
-    animation-delay: 4.8s; */
+    animation: slide 5s ease-in-out ;
+    animation-delay: 5.2s;
     
 }
 
@@ -265,13 +265,13 @@
 .slider-item.active .caption__second {
     opacity: 0;
     animation: captionText 1.4s ease-in-out forwards;
-    animation-delay: 1.4s;
+    animation-delay: 1.9s;
 }
 
 .slider-item.active .caption__view {
     opacity: 0;
     animation: captionText 1.4s ease-in-out forwards;
-    animation-delay: 1.4s;
+    animation-delay: 1.9s;
 }
 
 .caption__first {
