@@ -88,4 +88,4 @@ function autoPlay() {
     updateCircleIndicator();
 }
 
-let timer = setInterval(autoPlay, 5000);
+let timer = setInterval(autoPlay, 7000);
